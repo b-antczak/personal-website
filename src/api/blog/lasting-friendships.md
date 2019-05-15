@@ -45,4 +45,4 @@ To conclude, I’d like to quote Amy Santiago from the hit television series Bro
 
 > Life is unpredictable. Not everything’s in our control, but as long as you’re with the right people, you can handle anything.
 
-[banner]: https://github.com/b-antczak/personal-website/raw/master/src/api/blog/images/lasting-friendships-01.jpg "My friends and I"
+[banner]: https://github.com/b-antczak/personal-website/raw/master/src/api/blog/images/lasting-friendships-01.jpeg "My friends and I"
