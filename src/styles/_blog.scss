@@ -1,0 +1,18 @@
+.blogpage {
+  p {
+    color: $black-87;
+    font-weight: 300;
+    line-height: 1.8;
+    padding-top: 0;
+  }
+  h1 {
+    margin-bottom: 1rem;
+  }
+  h1, h2, h3 {
+    color: $my-red;
+  }
+  code {
+    border-radius: 0.25rem;
+    line-height: 1.5;
+  }
+}
