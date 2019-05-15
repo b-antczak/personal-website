@@ -2,7 +2,7 @@
   "name": "b-antczak.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://b-antczak.github.io/b-antczak.github.io",
+  "homepage": "https://b-antczak.github.io/personal-website",
   "dependencies": {
     "history": "^4.7.2",
     "interweave": "^9.2.1",
