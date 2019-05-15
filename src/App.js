@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Route,
   Switch,
 } from 'react-router-dom';
@@ -12,7 +12,7 @@ import './styles/_index.scss';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter>
         <div className="container heebo">
           <Switch>
             <Route exact path="/" component={Home}/>
@@ -20,7 +20,7 @@ class App extends Component {
             <Route exact path='/blog/:slug' component={BlogPost}/>
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }

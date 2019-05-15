@@ -26,7 +26,7 @@ class Header extends Component {
         <a className='link black-60 hover-black inline-flex items-center mr2 tc br2 pr2' href='https://linkedin.com/in/bartoszantczak' target='_blank' title=' LinkedIn '>
           <svg className='dib h1p5 w1p5 ' fill='currentColor ' xmlns='http://www.w3.org/2000/svg ' viewBox='0 0 16 16 ' fillRule='evenodd ' clipRule='evenodd ' strokeLinejoin='round ' strokeliterlimit='1.414 '><path d='M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z ' fillRule='nonzero '/></svg>
         </a>
-        <a className='link black-60 hover-black inline-flex items-center tc br2' href='../bartosz_antczak_resume.pdf ' target='_blank ' title='Resume '>
+        <a className='link black-60 hover-black inline-flex items-center tc br2' href='https://github.com/b-antczak/personal-website/blob/master/src/bartosz_antczak_resume.pdf' target='_blank ' title='Resume '>
           <svg className='dib h1p5 w1p5 ' fill='currentColor ' xmlns='http://www.w3.org/2000/svg ' viewBox='4 2 20 20 ' fillRule='evenodd ' clipRule='evenodd ' strokeLinejoin='round ' strokeliterlimit='1.414 '>
             <path d='M0 0h24v24H0z ' fill='none '></path>
             <path d='M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z '></path>
