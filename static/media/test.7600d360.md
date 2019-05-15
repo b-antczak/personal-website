@@ -23,4 +23,4 @@ def foo(self, name):
   # this is a valid comment
   print('Hello, ' + name)
 ```
-[logo]: https://github.com/b-antczak/b-antczak.github.io/blob/master/src/api/blog/images/test-01.jpg "Logo Title Text 2"
+[logo]: https://github.com/b-antczak/personal-website/raw/master/src/api/blog/images/test-01.jpg "Logo Title Text 2"
