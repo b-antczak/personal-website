@@ -15,4 +15,14 @@
     border-radius: 0.25rem;
     line-height: 1.5;
   }
+  blockquote {
+    border-left-color: $my-red;
+    border-left-style: solid;
+    border-left-width: 3px;
+    margin-left: 1rem;
+    p {
+      font-style: italic;
+      padding-left: 1rem;
+    }
+  }
 }
