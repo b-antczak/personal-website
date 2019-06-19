@@ -4,6 +4,12 @@
  */
 const metadata = [
   {
+    file: 'finding-a-minimum-path.md',
+    slug: 'finding-a-minimum-path',
+    title: 'Problem of the Day: Finding a Minimum Path',
+    posted: 'May 30, 2019' 
+  },
+  {
     file: 'lasting-friendships.md',
     slug: 'lasting-friendships',
     title: 'Lasting Friendships',
