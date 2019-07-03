@@ -4,6 +4,12 @@
  */
 const metadata = [
   {
+    file: 'multi-lambda-function-js.md',
+    slug: 'multi-lambda-function-js',
+    title: 'Neatbit: Multi Lambda Functions in Javascript (ES6)',
+    posted: 'June 15, 2019' 
+  },
+  {
     file: 'finding-a-minimum-path.md',
     slug: 'finding-a-minimum-path',
     title: 'Problem of the Day: Finding a Minimum Path',
