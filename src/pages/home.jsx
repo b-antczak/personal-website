@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import headshot from '../images/fullbody.jpg';
 import Header from '../components/header';
 
-// Parse and format my written data
 import showdown from 'showdown';
 import { Markup } from 'interweave';
 import aboutMarkdown from '../markdowns/home/home.md';

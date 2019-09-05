@@ -72,9 +72,9 @@ class BlogPost extends Component {
       <div className='blogpage'>
         <Header />
         <div className='content'>
-          <p className='f1 fw3 mv0 ttc'>{this.state.title}</p>
+          <p className='f1 fw3 mv0 ttc lh-title'>{this.state.title}</p>
           <span className='my-red'>{this.state.posted}</span>
-          <div className='pt5'>
+          <div className='pt5 f4'>
             <Markup content={html} />
           </div>
         </div>

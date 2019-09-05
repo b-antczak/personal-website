@@ -2,9 +2,13 @@
   p {
     color: $black-87;
     font-weight: 300;
-    line-height: 1.8;
+    // line-height: 1.8;
     padding-top: 0;
   }
+  p .title {
+    line-height: 1.2;
+  }
+
   h1 {
     margin-bottom: 1rem;
   }
