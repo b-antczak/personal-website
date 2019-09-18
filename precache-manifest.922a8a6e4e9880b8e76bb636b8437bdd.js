@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/lasting-friendships.7ab22547.md"
   },
   {
-    "revision": "ef6355179122dc1465a4",
+    "revision": "dfaa0b54de7928469a22",
     "url": "/static/css/main.66851fa3.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/media/frameworks-1.fc8f597f.md"
   },
   {
-    "revision": "ef6355179122dc1465a4",
-    "url": "/static/js/main.ef635517.chunk.js"
+    "revision": "dfaa0b54de7928469a22",
+    "url": "/static/js/main.dfaa0b54.chunk.js"
   },
   {
     "revision": "5b76834134aa9ac61079c0d09842c082",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.874153db.chunk.css"
   },
   {
-    "revision": "fad6f1f8f3be75c118b9bef6fb73a47f",
+    "revision": "54bc52f7fa406906c8375a4f29a92dc0",
     "url": "/index.html"
   }
 ];
