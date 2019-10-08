@@ -1,57 +1,11 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
-import linkRoutes from '../api/link-routes';
 
-const NAV_ROUTES = [
-  {
-    path: '/',
-    exact: true,
-    key: '1',
-    main: () => (
-      <section>
-        <span className='mr3 mv0 fw6 ttc dib black-87'>home</span>&nbsp;
-        <Link to='/blog' className='link ttc fw6 black-54 hover-red'>blog</Link>
-      </section>
-    )
-  },
-  {
-    path: '/blog',
-    exact: false,
-    key: '2',
-    main: () => (
-      <section>
-        <Link to='/' className='link mr3 fw6 ttc black-54 hover-red'>home</Link>&nbsp;
-        <span className='dib ttc fw6 mv0 black-87'>blog</span>
-      </section>
-    )
-  }
-];
-
-class Header extends Component {
+class Footer extends Component {
   render() {
     return (
-      <div className='ph3 flex flex-row items-center justify-between'>
-        <div className='flex items-center fw7 f4 black-30' style={{'letterSpacing': '-0.03em'}}>
-        <img src='http://tachyons.io/img/logo.jpg' className='w3 h3 br-100' />
-          <Link to='/' className='ml3 link black-54 hover-red'>Bartosz Antczak</Link>
-        </div>
-        
-        {/* Nav links */}
-        <div className='self-center right'>  
-          {
-            NAV_ROUTES.map((route, index) => (
-              <Route
-                component={route.main}
-                exact={route.exact}
-                key={route.key}
-                path={route.path}
-              />
-            ))
-          }
-        </div>
-        
-        {/* Social media TODO: move to footer! */}
-        {/* <div className='self-center right'>
+      <div className='ph3 pb5 flex flex-row items-center justify-center'>
+        <div>
           <a className='link black-60 hover-black inline-flex items-center tc br2 pv2 pr2 mr2' href='https://github.com/b-antczak' target='_blank' title='GitHub'>
             <svg className='dib h1p5 w1p5' fill='currentColor' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fillRule='evenodd' clipRule='evenodd' strokeLinejoin='round' strokeliterlimit='1.414'><path d='M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8'/></svg>
           </a>
@@ -67,10 +21,10 @@ class Header extends Component {
               <path d='M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z '></path>
             </svg>
           </a>
-        </div> */}
+        </div>
     </div>
     );
   }
 }
 
-export default Header;
+export default Footer;

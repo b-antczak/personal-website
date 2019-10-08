@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../components/header';
+import { Link } from 'react-router-dom';
 import metadata from '../api/blog/metadata';
 import showdown from 'showdown';
 import showdownHighlight from 'showdown-highlight';
@@ -21,7 +21,7 @@ class BlogPost extends Component {
       file = q.file;
     } else {
       // we determine the post info through the search query
-      const paths = this.props.location.pathname.split('/');
+      const paths = props.location.pathname.split('/');
       for (let i = 0; i < paths.length; ++i) {
         if (paths[i] === 'blog') {
           const slug = paths[i+1]; // we're guranteed that this terminates without error
@@ -64,17 +64,22 @@ class BlogPost extends Component {
 
   render() {
     const converter = new showdown.Converter({ extensions: [showdownHighlight] });
+    const { content, title, posted } = this.state;
     let html = '<div></div>';
-    if (this.state.content) {
-      html = converter.makeHtml(this.state.content);
+    if (content) {
+      html = converter.makeHtml(content);
     }
     return (
       <div className='blogpage'>
-        <Header />
         <div className='content'>
-          <p className='f1 fw3 mv0 ttc lh-title'>{this.state.title}</p>
-          <span className='my-red'>{this.state.posted}</span>
-          <div className='pt5 f4'>
+          <div className='flex items-center pb3 black-54'>
+            <Link to='/blog' className='link'>Posts</Link><span className='mh3'>/</span>{title}
+          </div>
+          <div className='bb b--black-20 pb4'>
+            <h1 className='f1 fw3 mt0 ttc lh-title fw7'>{title}</h1>
+            <span className='black-54'>{posted}</span>
+          </div>
+          <div className='f4' style={{paddingTop: '3rem'}}>
             <Markup content={html} />
           </div>
         </div>

@@ -1,18 +1,18 @@
 .blogpage {
-  p {
-    color: $black-87;
-    font-weight: 300;
-    // line-height: 1.8;
-    padding-top: 0;
+  h1 {
+    color: #1f2933;
+    letter-spacing: -0.03em;
   }
+
+  p:not(:last-child) {
+    color: #464646;
+    font-weight: 400;
+  }
+
   p .title {
     line-height: 1.2;
   }
-
-  h1 {
-    margin-bottom: 1rem;
-  }
-  h1, h2, h3 {
+  h3 {
     color: $my-red;
   }
   code {
@@ -20,11 +20,15 @@
     line-height: 1.5;
   }
   blockquote {
-    border-left-color: $my-red;
+    border-left-color: #ff4136;
     border-left-style: solid;
     border-left-width: 3px;
     margin-left: 1rem;
     p {
+      padding: 0.5rem 0 0.5rem 0;
+      text-align: left;
+      font-size: 1.1rem;
+      color: $black-54;
       font-style: italic;
       padding-left: 1rem;
     }

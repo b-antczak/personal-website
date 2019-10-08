@@ -1,6 +1,4 @@
-### My name is Bartosz Antczak.
-
-I study computer science at the University of Waterloo in Canada. I enjoy building software and solving problems.
+Hi, I'm Bartosz. I study computer science at the University of Waterloo in Canada. I enjoy building software and solving problems.
 
 #### What are you up to right now?
 I’m on an internship as a software engineer in Redwood City, California until the end of December.
@@ -9,7 +7,7 @@ I’m on an internship as a software engineer in Redwood City, California until 
 I’m a frequent user of [HackerRank](https://www.hackerrank.com/b_antczak) and [Leetcode](https://leetcode.com/bantczak/). I also have a blog that covers any semi-provoking thoughts I have.
 
 #### Any interests?
-Theoretical computing and language parsers.  
+Formal languages and parsers.  
 Non technical interests include collecting LEGO models and playing foosball.
 
 #### Can I contact you?

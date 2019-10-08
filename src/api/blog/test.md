@@ -23,6 +23,7 @@ def foo(self, name):
   # this is a valid comment
   print('Hello, ' + name)
 ```
-
 Here is a variable *x<sub>&#181;</sub> = 3*.
+
+*Last updated: May 15, 2019*
 [logo]: https://github.com/b-antczak/personal-website/raw/master/src/api/blog/images/test-01.jpg "Logo Title Text 2"

@@ -26,15 +26,14 @@ class Blog extends Component {
   render() {
     return (
       <div className="blogpage">
-        <Header />
         <div className="content">
-          <ul className='list f6 pl0 mt3 mb0'>
+          <ul className='list f6 pl0 mv0'>
             {
               metadata.map((item, index) => (
-                <li className='pv2' key={index}>
+                <li style={{paddingBottom: '3rem'}} key={index}>
                   <Link to={{pathname: `/blog/${item.slug}`, query: item }}>
-                    <h4 className='link dim black-87 f2 fw5 mb2 ttc'>{item.title}</h4>
-                    <span className='my-red'>{item.posted}</span>
+                    <h1 className='link hover-red black-87 fw5 mt0 mb2 ttc'>{item.title}</h1>
+                    <span className='black-54'>{item.posted}</span>
                   </Link>
                 </li>
               ))

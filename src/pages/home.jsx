@@ -25,15 +25,17 @@ class Home extends Component {
 
     return (
       <div className="homepage">
-        <Header/>
-        <div className="content dt">
+          <div className='content'>
+            <Markup content={html} />
+          </div>
+        {/* <div className="content dt">
           <div className="dtc v-top">
             <img src={headshot} className="mw5 br-100 my-shadow db" alt="A headshot of me" />
           </div>
           <div className="dtc v-top pl5">
             <Markup content={html} />
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

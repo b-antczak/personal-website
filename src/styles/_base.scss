@@ -13,7 +13,8 @@ body {
     margin-right: auto;
     padding-bottom: 4rem;
     padding-top: 4rem;
-    width: 80%;
+    width: 100%;
+    max-width: 36rem;
   }
 }
 
@@ -31,14 +32,19 @@ h1, h2, h3 {
 }
 
 p {
-  color: $black-54;
+  color: $black-87;
   line-height: 1.6;
+  font-size: 1.1rem;
+  // font-weight: 500;
+  color: #464646;
 }
 
 // The last child will always be "last updated at xxx"
 p:last-child {
   padding-top: 1.5rem;
-  opacity: 0.8;
+  color: #868686;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 

@@ -16,10 +16,10 @@ const metadata = [
     posted: 'May 30, 2019'
   },
   {
-    file: 'frameworks-1.md',
-    slug: 'what-exactly-is-a-framework',
-    title: 'So What Exactly is a Web Framework?',
-    posted: 'June --, 2019'
+    file: 'es6-to-vanillajs.md',
+    slug: 'compiling-es6-syntax-into-vanilla-javascript',
+    title: 'Compiling ES6 syntax into vanilla Javascript',
+    posted: 'October 10, 2019'
   },
   {
     file: 'lasting-friendships.md',

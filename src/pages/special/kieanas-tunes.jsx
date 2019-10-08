@@ -60,7 +60,7 @@ const songData = [
     {
         title: 'One With You',
         artist: 'Rick Jolt',
-        description: 'This song reminds me of that moment when we\'re in your room in Waterloo, shut off the lights and turn on the bed lights, cuddle under the blanket and just hold each other. It\'s a similar feeling to what I expereince when I listen to "In This Moment" by Gavin Luke.',
+        description: 'This song reminds me of that moment when we\'re in your room in Waterloo, shut off the lights and turn on the bed lights, cuddle under the blanket and just hold each other. It\'s a similar feeling to what I experience when I listen to "In This Moment" by Gavin Luke.',
         has_lyrics: false
     },
     {
@@ -86,6 +86,10 @@ const songData = [
     }
 ];
 class KieanasTunes extends Component {
+    componentDidMount() {
+        document.title = "Kieana's Tunes";
+    }
+
     render() {
         return (
             <div className='pt4'>
