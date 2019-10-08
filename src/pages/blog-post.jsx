@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import metadata from '../api/blog/metadata';
+import metadata from '../api/metadata';
 import showdown from 'showdown';
 import showdownHighlight from 'showdown-highlight';
 import { Markup } from 'interweave';

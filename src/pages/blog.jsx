@@ -1,32 +1,18 @@
 import React, { Component } from 'react';
-import showdown from 'showdown';
-import { Markup } from 'interweave';
 import { Link } from 'react-router-dom';
-import Header from '../components/header';
 // This lists the blog posts 
-import metadata from '../api/blog/metadata';
-
-const importAll = (r) => r.keys().map(r);
-const markdownFiles = importAll(require.context('../api/blog', false, /\.md$/));
+import metadata from '../api/metadata';
 
 class Blog extends Component {
   constructor(props) {
     super(props);
-    this.state = {posts: []};
-  }
-
-  async componentDidMount() {
-    document.title = "Blog | Bartosz Antczak";
-    const posts = await Promise.all(markdownFiles.map((file) => fetch(file).then((res) => res.text())))
-    .catch((err) => console.error(err));
-    console.log('comp did mount:', markdownFiles);
-    this.setState({posts: posts});
+    document.title = 'Blog | Bartosz Antczak';
   }
 
   render() {
     return (
-      <div className="blogpage">
-        <div className="content">
+      <div className='blogpage'>
+        <div className='content'>
           <ul className='list f6 pl0 mv0'>
             {
               metadata.map((item, index) => (

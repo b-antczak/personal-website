@@ -30,14 +30,14 @@ const NAV_ROUTES = [
 class Header extends Component {
   render() {
     return (
-      <div className='ph3 flex flex-row items-center justify-between'>
+      <div className='ph3 flex flex-row flex-wrap items-center justify-between-ns justify-center'>
         <div className='flex items-center fw7 f4 black-30' style={{'letterSpacing': '-0.03em'}}>
         <img src='http://tachyons.io/img/logo.jpg' className='w3 h3 br-100' />
           <Link to='/' className='ml3 link black-54 hover-red'>Bartosz Antczak</Link>
         </div>
         
         {/* Nav links */}
-        <div className='self-center right'>  
+        <div className='self-center right pl4'>  
           {
             NAV_ROUTES.map((route, index) => (
               <Route
