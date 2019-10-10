@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <div className="container heebo">
+        <div className="container main-font">
           <Header />
           <Switch>
             <Route exact path="/" component={Home}/>

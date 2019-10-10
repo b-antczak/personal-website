@@ -63,7 +63,34 @@ class BlogPost extends Component {
   }
 
   render() {
-    const converter = new showdown.Converter({ extensions: [showdownHighlight] });
+    const converter = new showdown.Converter({ extensions: [
+      showdownHighlight,
+      // Function courtesy of: https://github.com/showdownjs/showdown/issues/222#issuecomment-234141081
+      function() {
+        return [{
+          type: 'lang',
+          regex: /\[((?:\[[^\]]*]|[^\[\]])*)]\([ \t]*<?(.*?(?:\(.*?\).*?)?)>?[ \t]*((['"])(.*?)\4[ \t]*)?\)\{\:target=(["'])(.*)\6}/g,
+          replace: function(wholematch, linkText, url, a, b, title, c, target) {
+      
+            var result = '<a href="' + url + '"';
+      
+            if (typeof title != 'undefined' && title !== '' && title !== null) {
+              title = title.replace(/"/g, '&quot;');
+              title = showdown.helper.escapeCharacters(title, '*_', false);
+              result += ' title="' + title + '"';
+            }
+      
+            if (typeof target != 'undefined' && target !== '' && target !== null) {
+              result += ' target="' + target + '"';
+            }
+      
+            result += '>' + linkText + '</a>';
+            return result;
+          }
+        }];
+      }]
+    });
+
     const { content, title, posted } = this.state;
     let html = '<div></div>';
     if (content) {
@@ -72,11 +99,11 @@ class BlogPost extends Component {
     return (
       <div className='blogpage'>
         <div className='content'>
-          <div className='flex items-center pb3 black-54'>
+          <div className='flex items-center pb3 black-54 ttc'>
             <Link to='/blog' className='link'>Posts</Link><span className='mh3'>/</span>{title}
           </div>
           <div className='bb b--black-20 pb4'>
-            <h1 className='f1 fw3 mt0 ttc lh-title fw7'>{title}</h1>
+            <h1 className='fw3 mt0 ttc fw7' style={{fontSize: '2.5rem'}}>{title}</h1>
             <span className='black-54'>{posted}</span>
           </div>
           <div className='f4' style={{paddingTop: '3rem'}}>

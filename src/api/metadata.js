@@ -1,24 +1,24 @@
 /**
  * This file contains metadata about my blog posts.
- * TODO: ensure no slug is a duplicate (highly, highly unlikely)
+ * NOTE: ensure no slug is a duplicate (highly, highly unlikely)
  */
 const metadata = [
-  {
-    file: 'multi-lambda-function-js.md',
-    slug: 'multi-lambda-function-js',
-    title: 'Neatbit: Multi Lambda Functions in Javascript (ES6)',
-    posted: 'June 15, 2019' 
-  },
-  {
-    file: 'finding-a-minimum-path.md',
-    slug: 'finding-a-minimum-path',
-    title: 'Problem of the Day: Finding a Minimum Path',
-    posted: 'May 30, 2019'
-  },
+  // {
+  //   file: 'multi-lambda-function-js.md',
+  //   slug: 'multi-lambda-function-js',
+  //   title: 'Neatbit: Multi Lambda Functions in Javascript (ES6)',
+  //   posted: 'June 15, 2019' 
+  // },
+  // {
+  //   file: 'finding-a-minimum-path.md',
+  //   slug: 'finding-a-minimum-path',
+  //   title: 'Problem of the Day: Finding a Minimum Path',
+  //   posted: 'May 30, 2019'
+  // },
   {
     file: 'es6-to-vanillajs.md',
-    slug: 'compiling-es6-syntax-into-vanilla-javascript',
-    title: 'Compiling ES6 syntax into vanilla Javascript',
+    slug: 'better-understanding-es6-syntax',
+    title: 'Better understanding ES6 syntax',
     posted: 'October 10, 2019'
   },
   {

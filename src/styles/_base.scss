@@ -25,42 +25,17 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #357edd;
-}
-
-h1, h2, h3 {
-  color: $black-87;
+  text-decoration: none;
 }
 
 p {
-  color: $black-87;
-  line-height: 1.6;
-  font-size: 1.1rem;
-  // font-weight: 500;
   color: #464646;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
-// The last child will always be "last updated at xxx"
-p:last-child {
-  padding-top: 1.5rem;
-  color: #868686;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-
-.my-red{
-  color: $my-red;
-}
-
+.my-red{ color: $my-red; }
 .black-87 { color: $black-87; }
 .black-54 { color: $black-54; }
-
-.h1p5 {
-  height: 1.5rem
-}
-
-.w1p5 {
-  height: 1.5rem;
-}

@@ -1,15 +1,20 @@
-.homepage {
-  h3 {
-    font-weight: 500;
-  }
-  
-  h4, h5, h6 {
+.homepage {  
+  h4 {
     color: #e7040f;
-    opacity: 0.7;
+    opacity: 0.8;
     margin-bottom: 0;
     padding-bottom: 0.5rem;
   }
+
   p {
     margin-top: 0;
+  }
+  
+  // The last child will always be "last updated at xxx"
+  p:last-child {
+    padding-top: 1.5rem;
+    color: #868686;
+    text-align: center;
+    font-size: 0.9rem;
   }
 }

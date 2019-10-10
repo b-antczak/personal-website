@@ -18,7 +18,7 @@ class Blog extends Component {
               metadata.map((item, index) => (
                 <li style={{paddingBottom: '3rem'}} key={index}>
                   <Link to={{pathname: `/blog/${item.slug}`, query: item }}>
-                    <h1 className='link hover-red black-87 fw5 mt0 mb2 ttc'>{item.title}</h1>
+                    <h1 className='link hover-red black-87 fw6 mt0 mb2 ttc'>{item.title}</h1>
                     <span className='black-54'>{item.posted}</span>
                   </Link>
                 </li>
